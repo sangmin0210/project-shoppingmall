@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiveEats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;500;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/52b9cbcdb3.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <img id="mb-icon" class="btns" src="images/menu.png" alt="전체카테고리 아이콘">
+        <a href="/index.html"><img id="logo" src="images/logo.png" alt="기브잇츠로고"></a>
+        <div id="search">
+            <input type="text" placeholder="'원하시는 물품을 검색해주세요'">
+            <img class="btns" src="images/search.png" alt="검색아이콘">
+        </div>
+        <div id="headerMenu">
+            <a href="#"><img src="images/shopping.png" alt="장바구니 아이콘"></a>
+            <a href="#"><img src="images/truck.png" alt="배송확인 아이콘"></a>
+            <a href="#"><img src="images/id.png" alt="개인정보 아이콘"></a>
+        </div>
+    </header>
+    <nav>
+        <ul id="gnb">
+            <li>
+                <a href="#"><img src="images/menu.png" alt="전체카테고리 아이콘"> 전체카테고리</a>
+                <ul id="lnb">
+                    <li>
+                        <a href="#">밥/죽/면</a>
+                        <ul class="submenu">
+                            <li><a href="#">햇반/컵반</a></li>
+                            <li><a href="#">볶음밥/주먹밥</a></li>
+                            <li><a href="#">죽/스프</a></li>
+                            <li><a href="#">면요리</a></li>
+                            <li><a href="#">건면/생면/떡</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">국/김치/반찬</a>
+                        <ul class="submenu">
+                            <li><a href="#">국/탕/찌개</a></li>
+                            <li><a href="#">김치</a></li>
+                            <li><a href="#">밑반찬</a></li>
+                            <li><a href="#">두부/어묵/유부/계란</a></li>
+                            <li><a href="#">김</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">피자/치킨/만두</a>
+                        <ul class="submenu">
+                            <li><a href="#">만두</a></li>
+                            <li><a href="#">피자</a></li>
+                            <li><a href="#">치킨/너겟</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">돈까스/함박/구이</a>
+                        <ul class="submenu">
+                            <li><a href="#">돈까스</a></li>
+                            <li><a href="#">함박스테이크/미트볼</a></li>
+                            <li><a href="#">떡갈비/동그랑떙</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">양념/소스/가루/오일</a>
+                        <ul class="submenu">
+                            <li><a href="#">소스/드레싱</a></li>
+                            <li><a href="#">다담/고기양념</a></li>
+                            <li><a href="#">고추장/된장/간장</a></li>
+                            <li><a href="#">다시다/산들애</a></li>
+                            <li><a href="#">맛술/식초/액젓</a></li>
+                            <li><a href="#">설탕/소금</a></li>
+                            <li><a href="#">식용유/참기름</a></li>
+                            <li><a href="#">밀가루/쿠킹믹스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">건강식품</a> 
+                        <ul class="submenu">
+                            <li><a href="#">유산균</a></li>
+                            <li><a href="#">홍삼/흑삼</a></li>
+                            <li><a href="#">비타민/건강음료</a></li>
+                            <li><a href="#">다이어트/뷰티</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">신선식품</a>
+                        <ul class="submenu">
+                            <li><a href="#">과일/채소</a></li>
+                            <li><a href="#">정육/수산</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">음료/생수</a>
+                        <ul class="submenu">
+                            <li><a href="#">미초</a></li>
+                            <li><a href="#">청/시럽</a></li>
+                            <li><a href="#">생수/음료</a></li>
+                            <li><a href="#">커피</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">대용량식자재</a>
+                        <ul class="submenu">
+                            <li><a href="#">밀가루/쿠킹믹스</a></li>
+                            <li><a href="#">설탕/조미료/오일</a></li>
+                            <li><a href="#">장류/소스</a></li>
+                            <li><a href="#">냉동식품</a></li>
+                            <li><a href="#">국/반찬</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="#">선물하기</a></li>
+                    <li><a href="#">브랜드</a></li>
+                </ul>
+            </li>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">인기상품</a></li>
+            <li><a href="#">신제품</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">구매후기</a></li> 
+            <li><a href="#">쿠폰&amp;혜택</a></li>
+            <li><a href="service.html">상품문의</a></li>
+        </ul>
+    </nav>
+    <div id="slide">
+        <div class="scene btns"></div>
+        <div class="scene btns"></div>
+        <div class="scene btns"></div>
+        <div id="slideBtn">
+            <i id="sdprev" class="fa fa-angle-left btns"></i>
+            <i id="sdplay" class="fa fa-play btns"></i>
+            <i id="sdstop" class="fa fa-pause btns"></i>
+            <i id="sdnext" class="fa fa-angle-right btns"></i>
+        </div>
+    </div>
+    <section>
+        <div id="hotItem">
+            <h2>이달의 인기상품</h2>
+            <ul class="item-wrap">
+                <li class="item">
+                    <a href="#"><img src="/images/pizza.jpg" alt="피자">
+                    </a>
+                    <p>
+                        <span>불고기 냉동 피자</span> <br>
+                        20,000원<br>
+                        <img class="star" src="/images/star.png" alt="별점">
+                    </p>
+                    <div class="popup">
+                        <button class="btns popbtn">상품 바로가기</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="images/seasoning.jpg" alt="양념종류세트">
+                    </a>
+                    <p>
+                        <span>양념 종류 세트</span> <br>
+                        19,250원<br>
+                        <img class="star" src="/images/star.png" alt="별점">
+                    </p>
+                    <div class="popup">
+                        <button class="btns popbtn">상품 바로가기</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="images/pork cutlet.jpg" alt="돈까스">
+                    </a>
+                    <p>
+                        <span>OO돈까스 20개입</span> <br>
+                        32,000원<br>
+                        <img class="star" src="/images/star.png" alt="별점">
+                    </p>
+                    <div class="popup">
+                        <button class="btns popbtn">상품 바로가기</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="images/kimchi.jpg" alt="배추김치">
+                    </a>
+                    <p>
+                        <span>OO배추김치</span> <br>
+                        43,200원<br>
+                        <img class="star" src="/images/star.png" alt="별점">
+                    </p>
+                    <div class="popup">
+                        <button class="btns popbtn">상품 바로가기</button>
+                    </div>
+                </li>
+            </ul>
+            <button class="item-btn"><a href="#">인기상품 더보기&gt;</a></button>
+        </div>
+        <div id="newItem">
+            <h2>신 제 품</h2>
+            <p>이번에 새로 나왔어요!</p>
+            <ul class="item-wrap">
+                <li class="item">
+                    <a href="#"><img src="images/cheeseball.jpg" alt="모짜렐라치즈볼">
+                    </a>
+                    <p>
+                        <span>모짜렐라 치즈볼</span> <br>
+                        15,300원<br>
+                        <img class="star" src="/images/star2.png" alt="별점">
+                    </p>
+                    <div class="popup">
+                        <button class="btns popbtn">상품 바로가기</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="images/gomtang.jpg" alt="사골곰탕">
+                    </a>
+                    <p>
+                        <span>사골곰탕 10개입</span> <br>
+                        13,250원<br>
+                        <img class="star" src="/images/star.png" alt="별점">
+                    </p>
+                    <div class="popup">
+                        <button class="btns popbtn">상품 바로가기</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="images/fired-food.jpg" alt="튀김종류세트">
+                    </a>
+                    <p>
+                        <span>튀김종류세트</span> <br>
+                        36,600원<br>
+                        <img class="star" src="/images/star.png" alt="별점">
+                    </p>
+                    <div class="popup">
+                        <button class="btns popbtn">상품 바로가기</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="images/Yoplait.jpg" alt="요플레">
+                    </a>
+                    <p>
+                        <span>요플레세트</span> <br>
+                        8,500원<br>
+                        <img class="star" src="/images/star2.png" alt="별점">
+                    </p>
+                    <div class="popup">
+                        <button class="btns popbtn">상품 바로가기</button>
+                    </div>
+                </li>
+            </ul>
+            <button class="item-btn"><a href="#">신제품 더보기&gt;</a></button>
+        </div>
+        <div id="event">
+            <h2>이 벤 트</h2>
+            <p><a href="#">전체보기&gt;</a></p>
+            <div id="event-wrap">
+                <div id="event-item">
+                    <div id="sail">
+                        <div class="sailImg">
+                            <a href="#"><img src="images/eventimg.jpg" alt="이벤트이미지"></a>
+                            <div class="popup2">
+                                <button class="btns pop2btn">상품 바로가기</button>
+                            </div>
+                        </div>
+                        <div class="sailTxt">
+                            <p>초특가</p>
+                            <h3>SAIL</h3>
+                            <p>~4월 19일까지</p>
+                            <p><span class="won">56,000원</span></p>
+                            <p><span class="won2">44,800원</span></p>
+                            <p><span class="txt">엄청난 가격에 만나보세요!</span></p>
+                        </div>
+                    </div>
+                    <div id="eventSlide">
+                        <div class="event-scene btns"></div>
+                        <div class="event-scene btns"></div>
+                        <div class="event-scene btns"></div>
+                        <i id="eprev" class="fa fa-angle-left btns"></i>
+                        <i id="enext" class="fa fa-angle-right btns"></i>
+                    </div>
+                </div>
+                <div id="banner">
+                    <a href="#"><img src="images/banner.jpg" alt="배너이미지"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer-wrap">
+            <div id="mf">
+                <div>
+                    <ul id="f-menu">
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">법적고지</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                    </ul>
+                </div>
+                <div id="family">
+                    <select id="fsite">
+                        <option value="x" id="first">패밀리사이트</option>
+                        <option value="https://www.cj.co.kr/kr/brands/bibigo">비비고</option>
+                        <option value="https://www.cj.co.kr/kr/brands/hetbahn">햇반</option>
+                        <option value="http://www.nongshim.com/main/index">농심</option>
+                        <option value="http://www.ottogi.co.kr/main/main.asp">오뚜기</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="fr">
+            <div id="flogo">
+                <a href="index.html"><img src="images/logo.png" alt="로고이미지"></a>
+            </div>
+            <div id="copy">
+                <p>
+                    대표이사 : 정상민 | 사업자등록번호 : 123-12-12345<br>
+                    광주광역시 서구 경열로 3<br>
+                    이메일 : giveeats@naver.com<br>
+                    ⓒ2022.GIVEEATS Inc.All rights reserved.<br>
+                    Copyright 2022.GIVEEATS All pictures cannot be copied without permission.<br>
+                </p>
+            </div>
+            <div id="sns">
+                <a href="http://www.facebook.com"><img src="images/facebook.png" alt="페이스북"></a>
+                <a href="http://www.youtube.com"><img src="images/youtube.png" alt="유튜브"></a>
+                <a href="http://www.instagram.com"><img src="images/instargram.png" alt="인스타그램"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
