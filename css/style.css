@@ -283,6 +283,8 @@ section {
     background-color: #efcc97;
 }
 
+
+
 /* -----modal */
 .popup {
     position: absolute;
@@ -329,6 +331,12 @@ section {
     font-size: 18px;
     margin-bottom: 30px;
 }
+
+.swiper-slide:nth-of-type(5), .swiper-slide:nth-of-type(6), .swiper-slide:nth-of-type(7), .swiper-slide:nth-of-type(8) {
+    display: none;
+}
+
+
 
 /* ----------event */
 
@@ -887,6 +895,10 @@ section {
 
 #newItem > p {
     font-size: 16px;
+}
+
+.swiper-slide:nth-of-type(5), .swiper-slide:nth-of-type(6), .swiper-slide:nth-of-type(7), .swiper-slide:nth-of-type(8) {
+    display: block;
 }
 
 /* ----------------이벤트 */

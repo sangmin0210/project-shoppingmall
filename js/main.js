@@ -140,7 +140,7 @@ $(document).ready(function() {
     //Swiper plugin initialization
     initSwiper();
 
-    //Swiper plugin initialization on window resize
+    //Swiper plugin initialization on window resize 윈도우 width 값 실시간으로 확인
     $(window).on('resize', function(){
         initSwiper();
     });
