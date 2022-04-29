@@ -114,14 +114,34 @@ $(document).ready(function() {
     // if (ww < 1280) {
     //     var swiper = new Swiper(".mySwiper", {
     //         slidesPerView: 3,
-    //         spaceBetween: 20,
+    //         spaceBetween: 10,
     //         freeMode: true,
-    //         pagination: {
-    //           el: ".swiper-pagination",
-    //           clickable: true,
-    //         },
     //     });
     // } else if (ww > 1280){
     //     swiper.destroy();
     // }
+    var mySwiper = undefined;
+    function initSwiper() {
+        var screenWidth = $(window).width();
+        if(screenWidth < 767 && mySwiper == undefined) {
+            mySwiper = new Swiper('.mySwiper', {
+                slidesPerView: 3,
+                spaceBetween: 0,
+                freeMode: true
+            });
+        } else if (screenWidth > 767 && mySwiper != undefined) {
+            mySwiper.destroy();
+            mySwiper = undefined;
+            jQuery('.swiper-wrapper').removeAttr('style');
+            jQuery('.swiper-slide').removeAttr('style');
+        }
+    }
+
+    //Swiper plugin initialization
+    initSwiper();
+
+    //Swiper plugin initialization on window resize
+    $(window).on('resize', function(){
+        initSwiper();
+    });
 })
