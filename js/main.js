@@ -126,7 +126,7 @@ $(document).ready(function() {
         if(screenWidth < 767 && mySwiper == undefined) {
             mySwiper = new Swiper('.mySwiper', {
                 slidesPerView: 3,
-                spaceBetween: 0,
+                spaceBetween: 5,
                 freeMode: true
             });
         } else if (screenWidth > 767 && mySwiper != undefined) {
