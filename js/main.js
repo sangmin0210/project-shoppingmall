@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    // a href='#' 클릭 무시 스크립트
+    $('a[href="#"]').click(function(ignore) {
+        ignore.preventDefault();
+    });
+
     $("#lnb > li").hover(function() {
         $(".submenu", this).stop().show()
     }, function() {
