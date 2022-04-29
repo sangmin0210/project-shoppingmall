@@ -85,7 +85,7 @@ $(document).ready(function() {
         $(".popup", this).stop().fadeOut();
     });
 
-    $(".sailImg").hover(function() {
+    $(".saleImg").hover(function() {
         $(".popup2").stop().fadeIn();
     }, function() {
         $(".popup2").stop().fadeOut();
