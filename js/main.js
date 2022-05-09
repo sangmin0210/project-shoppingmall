@@ -10,6 +10,17 @@ $(document).ready(function() {
         $(".submenu", this).stop().hide();
     })
 
+
+
+    // login
+
+    $(".auto").click(function() {
+        $(this).siblings(".auto2").stop().show();
+    })
+    $(".auto2").click(function() {
+        $(this).stop().hide();
+    });
+
     let idx= 0;
     let interval;
     mainSlide();

@@ -75,6 +75,123 @@ header {
     transform: scale(1.1);
 }
 
+/* ======== 로그인 팝업창 */
+
+#login-popup {
+    width: 600px;
+    height: 480px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 30;
+    left: 20%;
+    top: 10%;
+    border: 1px solid #333;
+    padding: 10px 0;
+}
+
+.login-logo {
+    border-bottom: 1px solid #868585;
+    width: 550px;
+    margin: 0 auto;
+    height: 60px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+#id-pw {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-left: 25px;
+}
+
+form > input {
+    width: 385px;
+    height: 40px;
+    margin-bottom: 5px;
+    border: 0;
+    outline: none;
+    background-color: #E6E6E6;
+    padding-left: 10px;
+    color: #8F8F8F;
+}
+
+.login-btn {
+    width: 150px;
+    height: 85px;
+    background-color: #FC9600;
+    margin-left: 50px;
+}
+
+.login-btn > p {
+    text-align: center;
+    line-height: 85px;
+    font-size: 18px;
+    color: #fff;
+    transition-duration: .4s;
+}
+
+.login-btn:hover {
+    opacity: .75;
+}
+
+#auto-search {
+    margin-top: 5px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+#auto-search > img {
+    width: 22px;
+    margin-right: 10px;
+}
+
+.auto {
+    margin-left: 27px;
+}
+
+.auto2 {
+    position: absolute;
+    left: 27px;
+    display: none;
+}
+
+.auto-txt {
+   margin-left: 150px;
+}
+
+.Id-search, .Pw-search {
+    margin: 0 5px;
+    font-size: 15px;
+}
+
+.Id-search {
+    color: #FC9600;
+}
+
+.Pw-search {
+    color: #FD5959;
+}
+
+.Id-search:hover, .Pw-search:hover {
+    opacity: .6;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ======= nav */
 
 nav {
