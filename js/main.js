@@ -12,7 +12,14 @@ $(document).ready(function() {
 
 
 
-    // login
+    // ===========login==========
+    $(".login-id").click(function() {
+        $("#login-wrap").fadeIn();
+    })
+    $(".close").click(function() {
+        $("#login-wrap").hide();
+    })
+
 
     $(".auto").click(function() {
         $(this).siblings(".auto2").stop().show();

@@ -7,6 +7,7 @@ body {
     font-size: 12px;
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
+    position: relative;
 }
 
 .btns {
@@ -76,17 +77,25 @@ header {
 }
 
 /* ======== 로그인 팝업창 */
+#login-wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 30;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+}
 
 #login-popup {
     width: 600px;
-    height: 480px;
+    height: 385px;
     background-color: #fff;
     position: absolute;
-    z-index: 30;
-    left: 20%;
-    top: 10%;
     border: 1px solid #333;
     padding: 10px 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .login-logo {
@@ -117,7 +126,7 @@ form > input {
     outline: none;
     background-color: #E6E6E6;
     padding-left: 10px;
-    color: #8F8F8F;
+    color: #525151;
 }
 
 .login-btn {
@@ -182,11 +191,73 @@ form > input {
     opacity: .6;
 }
 
+#social-login {
+    margin-left: 27px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
 
+#social-login > h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
 
+}
 
+#social-login > a > img {
+    display: inline-block;
+    margin-left: 20px;
+    width: 50px;
+    transition-duration: .4s;
+}
 
+#social-login > a:nth-child(2) > img {
+    margin-left: 0;
+}
 
+#social-login img:hover {
+    transform: scale(1.1);
+}
+
+#signUp {
+    width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #868585;
+    position: relative;
+}
+
+#signUp > p {
+    font-size: 14px;
+    color: #545454;
+    margin-top: 5px;
+}
+
+.sign-up {
+    color: #FD5959;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.sign-up:hover {
+    opacity: .6;
+}
+
+.close {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    border: 0;
+    outline: none;
+    background-color: #FC9600;
+    padding: 2px 8px 4px 8px;
+    color: #fff;
+}
+
+.close:hover {
+    opacity: .6;
+}
 
 
 
