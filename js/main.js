@@ -16,7 +16,7 @@ $(document).ready(function() {
     $(".login-id").click(function() {
         $("#login-wrap").fadeIn();
     })
-    $(".close").click(function() {
+    $(".popup-close").click(function() {
         $("#login-wrap").hide();
     })
 

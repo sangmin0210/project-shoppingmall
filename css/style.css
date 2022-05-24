@@ -244,7 +244,7 @@ form > input {
     opacity: .6;
 }
 
-.close {
+.popup-close {
     position: absolute;
     right: 5px;
     top: 10px;
@@ -255,7 +255,7 @@ form > input {
     color: #fff;
 }
 
-.close:hover {
+.popup-close:hover {
     opacity: .6;
 }
 
